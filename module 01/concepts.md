@@ -89,39 +89,12 @@ L'**Infrastructure as Code (IaC)** vient à la rescousse !
 
 ---
 
-## 4. Découverte de Terraform 🌍🔧
+## 4. Terraform : Le Moteur sous le Capot 🌍🔧
 
-**Terraform** est l'un des outils d'IaC les plus populaires, développé par HashiCorp.
+**Terraform** est l'un des outils d'IaC les plus populaires, développé par HashiCorp. Il permet de définir, provisionner et gérer l'infrastructure de manière sûre et efficace.
 
-*   **Open Source :** Gratuit et soutenu par une grande communauté.
-*   **Agnostique au Cloud (Multi-Cloud) :** Il ne se limite pas à AWS ! Il peut gérer des ressources sur Azure, Google Cloud, Kubernetes, et des centaines d'autres "providers".
-*   **Langage Déclaratif (HCL) :** Vous décrivez *ce que* vous voulez (l'état final), pas *comment* l'obtenir (les étapes). Le langage HCL (HashiCorp Configuration Language) est conçu pour être facile à lire et à écrire.
-*   **Plan d'Exécution (`terraform plan`) :** Avant d'appliquer des changements, Terraform vous montre exactement ce qu'il va créer, modifier ou supprimer. C'est comme une répétition générale !
-*   **Graphe de Dépendances :** Terraform comprend les dépendances entre vos ressources et les crée/modifie dans le bon ordre.
-*   **Gestion de l'État (`state`) :** Terraform conserve un fichier d'état (`terraform.tfstate`) qui mappe vos ressources définies dans le code à celles réellement provisionnées dans le cloud. C'est crucial !
-
-**Le workflow de base avec Terraform :**
-
-1.  **`Write` (Écrire) :** Vous écrivez votre infrastructure en code HCL dans des fichiers `.tf`.
-2.  **`Init` (Initialiser) :** `terraform init` télécharge les plugins nécessaires pour les fournisseurs que vous utilisez (ex: AWS).
-3.  **`Plan` (Planifier) :** `terraform plan` compare votre code à l'état actuel et vous montre les actions à effectuer.
-4.  **`Apply` (Appliquer) :** `terraform apply` exécute le plan et crée/met à jour votre infrastructure.
-
----
-
-## 5. Votre Premier `terraform apply` ! 🎉
-
-Assez de théorie pour l'instant ! Dans les labs de ce module, nous allons :
-
-1.  Installer Terraform sur votre machine.
-2.  Configurer l'AWS CLI (l'outil en ligne de commande pour interagir avec AWS).
-3.  Écrire notre premier fichier Terraform simple pour créer une ressource basique sur AWS (par exemple, un petit seau S3 pour stocker des fichiers).
-4.  Exécuter les commandes `terraform init`, `terraform plan` et `terraform apply` pour voir la magie opérer ! ✨
-5.  Et bien sûr, apprendre à nettoyer avec `terraform destroy`.
-
-C'est l'étape où vous allez vraiment commencer à sentir la puissance de l'IaC.
-
----
-
-Bravo d'être arrivé jusqu'ici ! Vous avez maintenant les bases théoriques nécessaires.
-Passons aux travaux pratiques pour mettre tout ça en application ! 🛠️
+*   **Open Source.**
+*   **Agnostique au Cloud (Multi-Cloud).**
+*   **Moteur de gestion d'état :** Terraform conserve un fichier d'état (`terraform.tfstate`) qui mappe vos ressources définies à celles réellement provisionnées. C'est crucial pour suivre les modifications et les dépendances.
+*   **Plan d'Exécution (`terraform plan`) :** Avant d'appliquer des changements, Terraform vous montre exactement ce qu'il va créer, modifier ou supprimer.
+*   **Graphe de Dépendances :** Terraform comprend les dépendances entre vos ressources.
