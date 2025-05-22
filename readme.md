@@ -65,7 +65,7 @@ Chaque module aura son propre dossier contenant :
 *   Les explications théoriques.
 *   Les fichiers Python (`.py`) pour les projets CDKTF.
 *   Un `Pipfile` pour gérer les dépendances Python.
-*   Des instructions claires pour réaliser les exercices (`README_LAB.md`).
+*   Des instructions claires pour réaliser les exercices (`lab*.md`).
 
 ## 🤝 Contribution
 

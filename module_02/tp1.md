@@ -63,5 +63,5 @@ Une dernière chose, le TP est probablement trop long pour être réalisé en un
 
 6.  Créez via le terminal un projet cdktf . Créez un dossier tp1_ec2 et ouvrez ce dossier dans VScode. Dans un terminal saisissez la commande `cdktf init --template="Python" --providers="aws@~>4.0" --local` et validez les différentes questions (voir ce [lien](!https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-build)). Changez l'interpréteur Python avec un ctrl+shift+p dans VS code et cherchez Python: Select Interpreter et prenez celui qui pointe vers un virtualenv. Il a Il a été créé pas Terraform et contient toutes les dépendances pour l'exercice (voir ce [lien](https://code.visualstudio.com/docs/Python/environments#_working-with-Python-interpreters)).
 
-7. Le code necessaire pour le tp se trouve déjà dans le fichier `lab1.md`. Pour deployer l'infrastructure il suffit de faire `cdktf deploy` et de suivre les instructions. 
+7. Le code necessaire pour le tp se trouve déjà dans le fichier `lab1.md`. Pour deployer l'infrastructure il suffit de faire `cdktf deploy` et de suivre les instructions. En n'oubliant pas de détruire votre instance EC2 après vu que le mode tiers est limité à 50$. Pour cela, faites `cdktf destroy`.
 
