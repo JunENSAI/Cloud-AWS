@@ -1,4 +1,4 @@
-# 🚀 Cours AWS + Terraform avec CDKTF & Python : Devenez un Pro du Cloud Moderne ! ☁️🐍🛠️
+# 🚀 Cours AWS + Terraform avec CDKTF & Python ! ☁️🐍🛠️
 
 Bienvenue dans ce cours conçu pour vous emmener des concepts du cloud AWS jusqu'à la mise en place d'infrastructures modernes et automatisées en utilisant **Terraform via le Cloud Development Kit (CDKTF) avec Python** ! L'objectif est de vous rendre autonome et confiant dans la gestion de vos ressources AWS en utilisant l'Infrastructure as Code (IaC) de manière programmable.
 
@@ -51,11 +51,11 @@ Voici le plan de bataille des modules que nous allons couvrir, en utilisant Pyth
 ## 🛠️ Prérequis
 
 *   Un compte AWS (le niveau gratuit "Free Tier" sera suffisant).
-*   Des bases en ligne de commande (Linux/macOS/Windows PowerShell).
+*   **AWS CLI** installée : La CLI (Command Line Interface) d'AWS https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 *   **Python (3.7+ recommandé)** et **`pipenv`** installés.
-*   **Node.js et npm** (pour installer la CLI de CDKTF).
-*   **Terraform CLI** installée (CDKTF l'utilise en arrière-plan).
-*   **CDKTF CLI** installée.
+*   **Node.js et npm** (pour installer la CLI de CDKTF) : https://nodejs.org/en/download
+*   **Terraform CLI** installée (CDKTF l'utilise en arrière-plan) : https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+*   **CDKTF CLI** installée : https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install
 *   AWS CLI configurée.
 *   Une envie d'apprendre et de coder votre infrastructure !
 

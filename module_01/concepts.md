@@ -18,6 +18,8 @@ Prêts à décoller ? 🚀
 
 Le "Cloud Computing", c'est un peu comme l'électricité : vous l'utilisez sans vous soucier de la centrale qui la produit. Il s'agit de fournir des services informatiques (serveurs, stockage, bases de données, réseaux, logiciels, etc.) via Internet ("le Cloud").
 
+![Type instance IaaS, PaaS, SaaS](./type_instance.png)
+
 Il existe principalement trois modèles de services cloud :
 
 ### a. IaaS (Infrastructure as a Service) 🏗️
