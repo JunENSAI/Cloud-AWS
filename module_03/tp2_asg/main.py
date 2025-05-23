@@ -44,8 +44,8 @@ class MyStack(TerraformStack):
                     protocol="TCP",
                 ),
                 SecurityGroupIngress(
-                    from_port=80,
-                    to_port=80,
+                    from_port=8080,
+                    to_port=8080,
                     cidr_blocks=["0.0.0.0/0"],
                     protocol="TCP"
                 )
@@ -131,6 +131,10 @@ class MyStack(TerraformStack):
             protocol="HTTP",
             default_action=[LbListenerDefaultAction(type="forward", target_group_arn=target_group.arn)] 
         )
+        TerraformOutput(self, "alb_dns_name",
+                        value=lb.dns_name,
+                        description="Language test"
+                        )
 
 
 

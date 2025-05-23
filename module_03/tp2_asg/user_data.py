@@ -9,6 +9,6 @@ cd Cloud-AWS/module_03/api
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
-venv/bin/python app.py
+venv/bin/python3 app.py
 echo "userdata-end"
 """.encode("ascii")).decode("ascii")
