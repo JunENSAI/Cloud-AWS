@@ -5,7 +5,7 @@ echo "userdata-start"
 apt update
 apt install -y python3-pip python3.12-venv
 git clone https://github.com/JunENSAI/Cloud-AWS.git
-cd Cloud-AWS/module_03/api
+cd Cloud-AWS/api
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt

@@ -9,7 +9,6 @@ from cdktf_cdktf_provider_aws.launch_template import LaunchTemplate
 from cdktf_cdktf_provider_aws.lb import Lb
 from cdktf_cdktf_provider_aws.lb_target_group import LbTargetGroup
 from cdktf_cdktf_provider_aws.lb_listener import LbListener, LbListenerDefaultAction
-from cdktf_cdktf_provider_aws.autoscaling_attachment import AutoscalingAttachment
 from cdktf_cdktf_provider_aws.autoscaling_group import AutoscalingGroup, AutoscalingGroupLaunchTemplate
 from user_data import user_data
 
