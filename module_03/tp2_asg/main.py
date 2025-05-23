@@ -87,10 +87,20 @@ class MyStack(TerraformStack):
         # définition du target group du LB
         target_group=LbTargetGroup(
             self, "tg_group",
-            port=80, 
+            port=8080,
             protocol="HTTP" ,
             vpc_id=default_vpc.id ,
-            target_type="instance" 
+            target_type="instance",
+            health_check={
+                "enabled": True,
+                "path": "/docs",
+                "port": "8080",
+                "protocol": "HTTP",
+                "interval": 30,
+                "timeout": 5,
+                "unhealthy_threshold": 2,
+                "matcher": "200-399" 
+            }
         )
 
         
