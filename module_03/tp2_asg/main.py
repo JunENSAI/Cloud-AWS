@@ -44,8 +44,8 @@ class MyStack(TerraformStack):
                     protocol="TCP",
                 ),
                 SecurityGroupIngress(
-                    from_port=8080,
-                    to_port=8080,
+                    from_port=80,
+                    to_port=80,
                     cidr_blocks=["0.0.0.0/0"],
                     protocol="TCP"
                 )
@@ -90,17 +90,7 @@ class MyStack(TerraformStack):
             port=8080,
             protocol="HTTP" ,
             vpc_id=default_vpc.id ,
-            target_type="instance",
-            health_check={
-                "enabled": True,
-                "path": "/docs",
-                "port": "8080",
-                "protocol": "HTTP",
-                "interval": 30,
-                "timeout": 5,
-                "unhealthy_threshold": 2,
-                "matcher": "200-399" 
-            }
+            target_type="instance"
         )
 
         
