@@ -4,7 +4,7 @@ from os import walk
 import os 
 
 
-bucket = "my-cdtf-test-bucket20250523145910962800000001"
+bucket = "jr-bucket20250523145910962800000001"
 
 
 

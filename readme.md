@@ -8,7 +8,7 @@ Bienvenue dans ce cours conçu pour vous emmener des concepts du cloud AWS jusqu
 *   **Approche Moderne avec CDKTF :** Utilisez un outil qui combine la flexibilité des langages de programmation avec la robustesse de Terraform.
 *   **Pratique avant tout :** Chaque concept théorique sera illustré par des exemples concrets et des labs en Python avec CDKTF.
 *   **Pertinence :** AWS est le leader du cloud, Terraform l'outil IaC de référence, et Python un langage incontournable.
-*   **Approche "sympa" :** On apprend sérieusement sans se prendre au sérieux !
+*   **Démarrage rapide :** Ce cours est conçu pour vous aider à vous lancer rapidement dans la programmation d'infrastructures AWS avec Python et CDKTF.
 
 ## 🎯 Ce que vous allez apprendre
 
@@ -21,7 +21,6 @@ Voici le plan de bataille des modules que nous allons couvrir, en utilisant Pyth
         *   Bref aperçu de HCL (langage natif de Terraform).
     *   Découverte de **CDKTF** : principes, installation, et comment il s'intègre avec Terraform.
     *   Configuration de votre environnement Python avec `pipenv`.
-    *   Votre premier `cdktf synth` et `terraform apply` !
 
 2.  **Module 2 : Les Fondations du Calcul avec EC2 en Python (CDKTF)**
     *   Introduction à **Amazon EC2**.
@@ -62,6 +61,8 @@ Voici le plan de bataille des modules que nous allons couvrir, en utilisant Pyth
 ## 📖 Comment utiliser ce dépôt ?
 
 Chaque module aura son propre dossier contenant :
+* Dans chaque lab si vous voulez commencer de zéro il faut juste se placer dans le bon module et créer un dossier pour contenir votre travail aussi vous vous deplacerez dans ce dossier et faire : `cdktf init --template="python" --providers="aws@~>5.0" --local`.
+* Ou bien vous pouvez normalement l'utiliser tel qu'il est et juste vous devez vous s'assurer que les dependances sont bien installées avec `pipenv sync`.
 *   Les explications théoriques.
 *   Les fichiers Python (`.py`) pour les projets CDKTF.
 *   Un `Pipfile` pour gérer les dépendances Python.
@@ -73,4 +74,4 @@ Les suggestions, corrections et améliorations sont les bienvenues ! N'hésitez 
 
 ---
 
-C'est parti pour l'aventure Cloud + CDKTF avec Python ! 🚀🐍
+C'est parti pour l'aventure Cloud + CDKTF avec Python ! 🚀🐍.

@@ -21,17 +21,7 @@
 6.  Un **Launch Template** :
     *   Utilise une AMI Amazon Linux 2.
     *   Type d'instance `t2.micro`.
-    *   **User Data** pour :
-        *   Installer un serveur web (ex: Apache ou `python3 -m http.server`).
-        *   **User Data** (voir `user_data_fastapi.py` fourni) pour :
-        *   Installer Python, pip, venv.
-        *   Créer un environnement virtuel et installer FastAPI & Uvicorn.
-        *   Créer une application FastAPI `main.py` avec les routes :
-            *   `GET /` : Message de bienvenue indiquant l'ID de l'instance.
-            *   `GET /hello/{name}` : Renvoie "Hello {name} from instance {ID}!"
-            *   `GET /bonjour/{name}` : Renvoie "Bonjour {name} from instance {ID}!"
-            *   `GET /salama/{name}` : Renvoie "Salama {name} from instance {ID}!"
-        *   Lancer Uvicorn sur le port **8000**, en écoutant sur `0.0.0.0`.
+    *   Dans user_data se trouve un script Bash qui vise à lancer une api simple avec FastAPI.
     *   Associé au groupe de sécurité des instances.
     *   Associé au groupe de sécurité des instances.
 7.  Un **Application Load Balancer (ALB)** :
