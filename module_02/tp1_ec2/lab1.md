@@ -54,7 +54,7 @@ echo "userdata-end"
 *   `echo "userdata-start"` : Un petit message pour marquer le début dans les logs. Pratique pour le débogage !
 *   `apt update` : Met à jour la liste des paquets disponibles (pour les systèmes Debian/Ubuntu, ce qui est le cas de l'AMI utilisée).
 *   `apt install -y python3-pip python3.12-venv` : Installe `pip` (le gestionnaire de paquets Python) et `venv` (pour créer des environnements virtuels Python) pour Python 3.12. Le `-y` répond automatiquement "oui" aux questions.
-*   `git clone https://github.com/HealerMikado/Ensai-CloudComputingLab1.git` : Clone le code source d'une application Python depuis GitHub. C'est notre application web !
+*   `git clone https://github.com/HealerMikado/Ensai-CloudComputingLab1.git` : Clone le code source d'une application Python depuis GitHub. C'est une application web simple !
 *   `cd Ensai-CloudComputingLab1` : Se déplace dans le dossier du code cloné.
 *   `python3 -m venv venv` : Crée un environnement virtuel Python nommé `venv`. C'est une bonne pratique pour isoler les dépendances du projet.
 *   `source venv/bin/activate` : Active l'environnement virtuel.
