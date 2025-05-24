@@ -19,9 +19,6 @@ Ce TP illustre un pattern courant : le découplage de services et le traitement 
         *   Effectuer l'opération (addition, soustraction, multiplication, division).
         *   Gérer les erreurs (division par zéro, opération inconnue, format de message incorrect).
         *   Envoyer un message JSON contenant le résultat (ou l'erreur) à `OutputCalculatorQueue`.
-3.  Un **Rôle IAM pour la Fonction Lambda** avec les permissions :
-    *   `sqs:ReceiveMessage`, `sqs:DeleteMessage`, `sqs:GetQueueAttributes` sur `InputCalculatorQueue`.
-    *   `sqs:SendMessage` sur `OutputCalculatorQueue`.
-    *   `logs:CreateLogGroup`, `logs:CreateLogStream`, `logs:PutLogEvents` pour les logs CloudWatch (via la politique gérée `AWSLambdaBasicExecutionRole`).
+3.  Un **Rôle IAM pour la Fonction Lambda** .
 4.  Un **Event Source Mapping** liant `InputCalculatorQueue` à `CalculatorFunction`.
 5.  Des **Terraform Outputs** pour les URLs des files SQS.
