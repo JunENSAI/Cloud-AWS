@@ -40,10 +40,13 @@ Voici le plan de bataille des modules que nous allons couvrir, en utilisant Pyth
     *   Introduction à **AWS Lambda**.
     *   **Avec CDKTF/Python :** Déployer des fonctions Lambda (dont le code peut aussi être en Python !).
 
-6.  **Module 6 : Introduction aux Pipelines CI/CD pour l'Infrastructure (Bonus)**
-    *   Principes de CI/CD pour l'IaC avec CDKTF.
-    *   Gestion de l'état Terraform (remote state) dans un contexte d'équipe/pipeline.
-    *   Aperçu des outils AWS (CodeCommit, CodeBuild, CodePipeline).
+6.  **Module 6 : Amazon API Gateway avec Lambda et CDKTF**
+    *   Application web en ReactJs qui communiquera avec une API Lambda.
+    *   API Gateway (REST API vs HTTP API), Ressources, Méthodes, Intégrations (Lambda, HTTP), Stages, Modèles de mapping, Autorisation (API Keys, IAM, Lambda Authorizers, Cognito).
+    *   Créer une HTTP API (plus simple et moderne) ou une REST API.
+    *   Intégrer une fonction Lambda existante comme backend.
+    *   Configurer les routes et les méthodes.
+    *   **Avec CDKTF/Python :** Déployer l'API.
 
 ---
 
