@@ -1,0 +1,86 @@
+.graphs-page-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.graphs-page-container h3, .graphs-page-container h4 {
+  color: #333;
+}
+
+.controls-graph {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls-graph label {
+  font-weight: bold;
+}
+
+.controls-graph select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+.chart-display-area {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.simulated-chart-data {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: monospace;
+  white-space: pre-wrap; /* Pour respecter les retours à la ligne */
+  word-break: break-all;
+}
+
+.boxplot-placeholder {
+  margin-top: 20px;
+  padding: 40px;
+  text-align: center;
+  border: 2px dashed #ccc;
+  color: #777;
+  background-color: #f0f0f0;
+}
+
+.chart-container {
+  position: relative; /* Nécessaire pour Chart.js pour la responsivité */
+  height: 400px; /* Donnez une hauteur explicite */
+  width: 100%;   /* Prenez toute la largeur disponible */
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.chart-display-area {
+  margin-top: 30px;
+  /* padding: 20px; */ /* Peut être géré par chart-container */
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 4px;
+}
+
+.boxplot-placeholder {
+  margin-top: 20px;
+  padding: 40px;
+  text-align: center;
+  border: 2px dashed #ccc;
+  color: #777;
+  background-color: #f0f0f0;
+  height: 400px; /* Même hauteur que le graphique pour la cohérence */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

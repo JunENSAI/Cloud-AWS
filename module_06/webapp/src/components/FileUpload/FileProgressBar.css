@@ -1,0 +1,20 @@
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  height: 20px; /* Hauteur fixe pour la barre */
+  overflow: hidden; /* Pour que le contenu interne ne dépasse pas */
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  line-height: 20px; /* Aligner verticalement le texte */
+  transition: width 0.4s ease;
+  font-size: 0.8rem;
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+}

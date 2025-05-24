@@ -1,0 +1,13 @@
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-area {
+  padding: 20px;
+  flex-grow: 1; /* Pour que le contenu prenne la place restante */
+  background-color: #f9f9f9;
+  overflow-y: auto; /* Si le contenu dépasse */
+}
